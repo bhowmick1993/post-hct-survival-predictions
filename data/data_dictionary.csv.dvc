@@ -1,0 +1,5 @@
+outs:
+- md5: aa4c585d3b40ee0d24fc54508419fec3
+  size: 6006
+  hash: md5
+  path: data_dictionary.csv
