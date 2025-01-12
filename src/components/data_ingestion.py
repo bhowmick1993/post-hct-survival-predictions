@@ -39,8 +39,8 @@ class DataIngestion:
             logging.info("Performing train test split")
             train, test = train_test_split(df, test_size=0.2, random_state=42) # split data
 
-            train.to_csv(self.ingsestion_config.train_data_path, index=False, header=True)
-            test.to_csv(self.ingsestion_config.test_data_path, index=False, header=True)
+            train.to_csv(self.obj_config.train_data_path, index=False, header=True)
+            test.to_csv(self.obj_config.test_data_path, index=False, header=True)
             logging.info("Data ingestion process completed")
 
             return self.obj_config.train_data_path, self.obj_config.test_data_path
@@ -50,6 +50,6 @@ class DataIngestion:
             raise CustomException(e, sys)
         
 if __name__ == "__main__":
-    data_ingestion = DataIngestion(data_csv_path="data.csv")
+    data_ingestion = DataIngestion(data_csv_path="C:\\AB_Personal\\post-hct-survival-predictions\\data\\train.csv")
     train_path, test_path = data_ingestion.initiate_data_ingstion()
     
