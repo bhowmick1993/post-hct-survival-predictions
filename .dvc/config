@@ -2,3 +2,5 @@
     remote = storge
 ['remote "storge"']
     url = gdrive://1GdSa-bfElCaDpqTMLUUR-lhTl5SK-aLN
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = C:\AB_Personal\post-hct-survival-predictions\kaggleisiccancer-b41de5642fb6.json
